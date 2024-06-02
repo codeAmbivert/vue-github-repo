@@ -66,9 +66,9 @@
             </div>
           </div>
           <div class="flex justify-center items-center w-full mt-5">
-            <button disabled="currentPage === 1"
+            <button :disabled="currentPage === 1"
               class="p-2 px-4 border border-[#30363D]  rounded-tl-lg rounded-bl-lg cursor-pointer"
-              @click="current.value = currentPage > 1 ? currentPage - 1 : currentPage">
+              @click="currentPage = JcurrentPage - 1">
               Prev
             </button>
             <div v-for="(item, i) in Array.from({ length: Math.ceil(repos.length / reposPerPage) })" :key="i">
