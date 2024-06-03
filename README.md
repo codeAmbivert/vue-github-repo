@@ -1,35 +1,27 @@
-# vue-github-repo
+# Vue Web App to fetch and update github repositories
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository has 5 pages.
+- The Index page
+- The Reposities page
+- The Repositiry page
+- The Error boundary page
+- The 404 error page
 
-## Recommended IDE Setup
+### The index page
+This page returns my details like github profile image, username, full name, etc. And, it also has two links one leads to the repositiries page and the other leads to the error boundary page.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### The repositories page
+This page returns all my repositiries, ten at a time with paginations. It includes a search and filter option that allows seamlessly search through my repositories. Each of the repository includes it's details, create repository, update and delete buttons and a link to the page for that particular repository.
 
-## Customize configuration
+### The repository page
+This page is similar to the repositiries page. It has same information as each of the repository only it is particulaly for one repsoitory. It also has the update and delete repository buttons
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### The error boundary page
+This page has a component whose job is to catch errors that would normally break ones code and instead of it breaking your code it displays a selected text
 
-## Project Setup
+### The 404 Error page
+This page is what appears when a user enter a wrong path into the brower. It displays a message that let's the user know they've entered a wrong patht and then redirects them to the home page after 10 seconds 
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- [The link to the working site](https://vue-github-repo-one.vercel.app/)
